@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <!-- NetworkImageView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/widget_video_img"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tucao_defalut"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/half_shade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="14dp"
+            android:src="@drawable/widget_play_num"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="14dp" />
+        <TextView
+            android:id="@+id/widget_video_play_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="19011"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
+        <ImageView
+            android:layout_width="14dp"
+            android:src="@drawable/widget_danmu"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:layout_height="14dp" />
+        <TextView
+            android:id="@+id/widget_video_danmu_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="3000"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
+    </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="缤果动漫"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="8dp"
+        android:id="@+id/widget_video_title" />
+</LinearLayout>

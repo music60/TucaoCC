@@ -1,0 +1,19 @@
+<video>
+    <result>succ</result>
+    <timelength>741000</timelength>
+    <src>30</src>
+    <durl>
+        <order>0</order>
+        <length>381000</length>
+        <url>
+            <![CDATA[http://f.youku.com/player/getFlvPath/sid/142207176513959146528_01/st/mp4/fileid/030008020154AF7A13FD8305017057602256BD-B2B7-77BB-CB2A-9B83A1203518?K=b3e23ff7a47c30f724121523]]>
+        </url>
+    </durl>
+    <durl>
+        <order>1</order>
+        <length>360000</length>
+        <url>
+            <![CDATA[http://f.youku.com/player/getFlvPath/sid/142207176513959146528_01/st/mp4/fileid/030008020154AF7A13FD8305017057602256BD-B2B7-77BB-CB2A-9B83A1203518?K=b3e23ff7a47c30f724121523]]>
+        </url>
+    </durl>
+</video>

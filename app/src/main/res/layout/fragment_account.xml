@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb" >
+
+    <RelativeLayout
+        android:id="@+id/account_mine"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/row_btn" >
+
+        <ImageView
+            android:id="@+id/account_mine_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/default_user_photo1" />
+
+        <TextView
+            android:id="@+id/account_mine_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/account_mine_img"
+            android:textSize="14sp"
+            android:text="@string/login"
+            android:textColor="@drawable/text_color_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/account_mine"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/row_btn" >
+
+        <ImageView
+            android:id="@+id/account_setting_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/account_setting_btn" />
+
+        <TextView
+            android:id="@+id/account_setting_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/account_setting_img"
+            android:text="@string/setting"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_down"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/account_setting"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/row_btn" >
+
+        <ImageView
+            android:id="@+id/account_down_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/account_down_btn" />
+
+        <TextView
+            android:id="@+id/account_down_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/account_down_img"
+            android:text="@string/download"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_about"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/account_down"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/row_btn" >
+
+        <ImageView
+            android:id="@+id/account_about_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/account_about_btn" />
+
+        <TextView
+            android:id="@+id/account_about_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/account_about_img"
+            android:text="@string/about"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/account_about"
+        android:background="@drawable/row_btn" >
+
+        <ImageView
+            android:id="@+id/account_feedback_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/account_feedback_btn" />
+
+        <TextView
+            android:id="@+id/mine_feedback_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/account_feedback_img"
+            android:text="@string/feed_back"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_checkupdate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/account_feedback"
+        android:background="@drawable/row_btn" >
+
+        <ImageView
+            android:id="@+id/account_checkupdate_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/account_update_btn" />
+
+        <TextView
+            android:id="@+id/account_checkupdate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/account_checkupdate_img"
+            android:text="@string/check_update"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_btn" />
+    </RelativeLayout>
+</RelativeLayout>

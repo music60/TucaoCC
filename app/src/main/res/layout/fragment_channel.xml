@@ -1,0 +1,325 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    tools:context="com.studyjun.tucao.fragment.ChannelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/reccommend_channel_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="频道"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+
+            android:background="@color/white"
+            android:id="@+id/reccommend_channel_line_one"
+            android:layout_below="@+id/reccommend_channel_name">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccommend_channel_ani"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_ani_img"
+                    android:src="@drawable/ic_cate_animation"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="动画"
+                    android:layout_below="@+id/reccommend_channel_ani_img"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccommend_channel_bangumi"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_bangumi_img"
+                    android:src="@drawable/ic_cate_bangumi"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/reccommend_channel_bangumi_img"
+
+                    android:gravity="center_horizontal"
+                    android:text="新番"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccommend_channel_sanciyuan"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_sanciyuan_img"
+                    android:src="@drawable/ic_cate_entertainment"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_below="@+id/reccommend_channel_sanciyuan_img"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:gravity="center_horizontal"
+                    android:text="三次元"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccommend_channel_gallery"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_gallery_img"
+                    android:src="@drawable/ic_photo_dteal_huaqu"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_below="@+id/reccommend_channel_gallery_img"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:gravity="center_horizontal"
+                    android:text="画室"
+                    android:id="@+id/textView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:background="@color/white"
+            android:id="@+id/reccommend_channel_line_two"
+            android:layout_below="@+id/reccommend_channel_line_one">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/reccommend_channel_game"
+                android:layout_height="match_parent"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:id="@+id/reccommend_channel_game_img"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_cate_game"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_below="@+id/reccommend_channel_game_img"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:gravity="center_horizontal"
+                    android:text="游戏"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccommend_channel_movie"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_movie_img"
+                    android:src="@drawable/ic_cate_movie"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/reccommend_channel_movie_img"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:gravity="center_horizontal"
+                    android:text="影剧"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccommend_channel_music"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_music_img"
+                    android:src="@drawable/ic_cate_music"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_below="@+id/reccommend_channel_music_img"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:gravity="center_horizontal"
+                    android:text="音乐"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/reccommend_channel_what"
+                android:layout_height="match_parent"
+                android:background="@drawable/channel_btn"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/reccommend_channel_what_img"
+                    android:src="@drawable/ic_cate_placehold"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reccommend_channel_what_img"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:text="什么"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:text="排行"
+            android:id="@+id/reccommend_channel_rank_name"
+            android:layout_below="@+id/reccommend_channel_line_two"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_below="@+id/reccommend_channel_rank_name"
+            android:id="@+id/reccommend_channel_rank"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_cate_hot"
+                android:layout_height="24dp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="热门排行"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/textView" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

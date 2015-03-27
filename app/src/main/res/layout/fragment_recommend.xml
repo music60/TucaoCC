@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="com.stduyjun.com.studyjun.tucao.fragment.RecommendFragment">
+
+
+    <com.yalantis.pulltorefresh.library.PullToRefreshView
+        android:id="@+id/recommend_pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/recommend_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:background="#dddddd"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="8dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+    </com.yalantis.pulltorefresh.library.PullToRefreshView>
+</FrameLayout>

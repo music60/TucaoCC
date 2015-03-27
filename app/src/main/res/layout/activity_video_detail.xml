@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.studyjun.tucao.ui.VideoDetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/video_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/mainBgColor"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:id="@+id/video_detail_photo"
+        android:src="@drawable/tucao_defalut"
+        android:layout_below="@+id/video_detail_toolbar"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="title"
+        android:id="@+id/video_detail_title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/video_detail_photo"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView4"
+        android:background="#dddddd"
+        android:layout_alignBottom="@+id/video_detail_photo"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_marginBottom="32dp"
+        android:layout_toRightOf="@+id/video_detail_photo"
+        android:layout_toEndOf="@+id/video_detail_photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="UP主:"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TucaoCC"
+        android:id="@+id/video_detail_up_name"
+        android:textColor="@color/mainBgColor"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="播放:"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/video_detail_play_num"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="弹幕:"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/video_detail_play_num"
+        android:layout_toRightOf="@+id/video_detail_photo"
+        android:layout_toEndOf="@+id/video_detail_photo" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:layout_width="94dp"
+        android:layout_height="56dp"
+        android:text="点击播放"
+        android:background="@color/mainBgColor"
+        android:id="@+id/video_detail_play"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3000"
+        android:id="@+id/video_detail_danmu_num"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#dddddd"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="简介:"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="作品简介作品简介作品简介作品简介"
+        android:id="@+id/video_detail_describe"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView14"
+        android:background="@color/mainBgColor"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="8dp"
+        android:text="共1段视频"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/mainBgColor"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/video_detail_describe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_detail_video_list"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/textView14" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/linearLayout"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+
+
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ica_light_ic_action_download"
+            android:background="@drawable/transparent_row_btn"
+            android:layout_height="match_parent"
+            android:id="@+id/video_detail_download" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ica_light_ic_action_chat"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_row_btn"
+            android:id="@+id/video_detail_comment" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ica_light_ic_action_important"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_row_btn"
+            android:id="@+id/video_detail_collect" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ica_light_ic_action_download"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_row_btn"
+            android:id="@+id/video_detail_setting" />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="youku"
+        android:id="@+id/video_detail_sources"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="来源:"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/video_detail_up_name"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+</RelativeLayout>

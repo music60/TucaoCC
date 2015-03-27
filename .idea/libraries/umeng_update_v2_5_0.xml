@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="umeng-update-v2.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/updateLib/libs/umeng-update-v2.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

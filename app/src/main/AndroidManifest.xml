@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.studyjun.tucao"
+    android:versionCode="1"
+    android:versionName="TEST0.001">
+
+    <uses-sdk tools:overrideLibrary="com.yalantis.pulltorefresh.library" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Tucao" >
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- 友盟 START -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54b86bfbfd98c5733a001db5" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="000000" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.VideoPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 友盟 END -->
+
+        <activity
+            android:name=".ui.FirstScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.VideoDetailActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name=".ui.VideoListActivity"
+            android:label="@string/title_activity_cartoon_list" >
+        </activity>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.stduyjun.tucao.ui.SearchResultsActivity" />
+
+        <activity
+            android:name=".ui.SearchResultActivity"
+            android:label="@string/title_activity_search_result"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ui.DownLoadListActivity"
+            android:label="@string/title_activity_down_load_list" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".ui.PlayerTestActivity"-->
+            <!--android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
+            <!--android:screenOrientation="landscape"-->
+            <!--android:label="@string/title_activity_down_load_list" >-->
+           <!---->
+        <!--</activity>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screen_ratio">
+        <item>默认</item>
+        <item>4:3</item>
+        <item>16:9</item>
+    </string-array>
+
+    <string-array name="screen_bit_rate">
+        <item>默认</item>
+        <item>流畅</item>
+        <item>标清</item>
+        <item>高清</item>
+    </string-array>
+</resources>

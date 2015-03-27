@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".PlayerActivity">
+
+    <com.studyjun.tucao.widget.TucaoVideoPlayerView
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+        android:id="@+id/sv_danmaku"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="当对方“呵呵”以后，你再说什么？"
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical"
+            android:background="@color/mainBgColor"
+            android:id="@+id/player_tucao_text"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:paddingLeft="8dp"
+            android:id="@+id/player_loading_text"
+            android:layout_above="@+id/player_tucao_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/player_masking_control"
+        ></FrameLayout>
+</FrameLayout>

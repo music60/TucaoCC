@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/list_item_bg"
+    android:padding="8dp"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:id="@+id/widget_video_list_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tucao_defalut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【东方MMD】Grils..."
+        android:id="@+id/widget_video_list_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:textColor="@color/list_item_main_text"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/widget_video_list_img"
+        android:layout_toEndOf="@+id/widget_video_list_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="UP主:"
+        android:textSize="12sp"
+        android:textColor="@color/list_item_plus_text"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/widget_video_list_img"
+        android:layout_marginLeft="4dp"
+        android:layout_alignLeft="@+id/widget_video_list_title"
+        android:layout_alignStart="@+id/widget_video_list_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="爱学习的逃课菌"
+        android:textSize="12sp"
+        android:textColor="@color/list_item_plus_text"
+        android:id="@+id/widget_video_list_upzhu"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:maxLines="1"
+
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="播放:"
+        android:textSize="12sp"
+        android:textColor="@color/list_item_plus_text"
+        android:id="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/widget_video_list_play_num"
+        android:layout_toStartOf="@+id/widget_video_list_play_num" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="99988"
+        android:textColor="@color/list_item_plus_text"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:layout_marginRight="32dp"
+        android:ellipsize="end"
+        android:id="@+id/widget_video_list_play_num"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

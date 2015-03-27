@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.studyjun.tucao"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'me.neavo:danmakuflamemaster:0.2.3'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'it.neokree:MaterialTabs:0.11'
+    compile 'com.yalantis:pulltorefresh:1.0.0'
+    compile 'com.github.markushi:android-ui:1.2'
+    compile 'com.github.navasmdc:MaterialDesign:1.+@aar'
+    compile 'in.srain.cube:ultra-ptr:1.0.7@aar'
+    compile 'com.yalantis:pulltorefresh:1.0.0'
+    compile 'com.alibaba:fastjson:1.1.39'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile project(':updateLib')
+    compile project(':playerwidget')
+
+
+
+
+}
