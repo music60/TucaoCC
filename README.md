@@ -19,8 +19,8 @@ android-app
 
 
 
-**1、src目录**<br>
-src目录用于存放项目的包及java源码文件。
+**1、java目录**<br>
+java目录用于存放项目的包及java源码文件。
 
 下面是app/java目录的子目录：
 > ├ com.studyjun.tucao<br>
@@ -34,3 +34,10 @@ src目录用于存放项目的包及java源码文件。
 > ├ com.studyjun.tucao.util--工具类<br>
 > └ com.studyjun.tucao.widget--自定义组件<br>
 
+**2、关于引用的第三方类库**<br>
+> ├ https://github.com/ctiao/DanmakuFlameMaster 弹幕引擎<br>
+> ├ https://github.com/bbcallen/ijkplayer--视频播放器<br>
+> ├ https://github.com/neokree/MaterialTabs--material design<br>
+
+
+  
