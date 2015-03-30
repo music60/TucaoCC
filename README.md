@@ -47,5 +47,5 @@ java目录用于存放项目的包及java源码文件。
 
 **3、app 截图 **<br> 
 
-https://raw.githubusercontent.com/music60/music60.github.io/master/resources/image/tucaocc.gif
+<img src="https://raw.githubusercontent.com/music60/music60.github.io/master/resources/image/tucaocc.gif"></img>
   
