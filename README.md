@@ -34,10 +34,18 @@ java目录用于存放项目的包及java源码文件。
 > ├ com.studyjun.tucao.util--工具类<br>
 > └ com.studyjun.tucao.widget--自定义组件<br>
 
-**2、关于引用的第三方类库**<br>
+**2、关于引用的第三方类库-**<br>
 > ├ https://github.com/ctiao/DanmakuFlameMaster 弹幕引擎<br>
-> ├ https://github.com/bbcallen/ijkplayer--视频播放器<br>
-> ├ https://github.com/neokree/MaterialTabs--material design<br>
+> ├ https://github.com/bbcallen/ijkplayer 视频播放器<br>
+> ├ https://github.com/neokree/MaterialTabs material design<br>
+> ├ https://github.com/markushi/android-ui material design<br>
+> ├ https://github.com/navasmdc/MaterialDesignLibrary material design<br>
+> ├ https://github.com/Yalantis/Phoenix 下拉刷新<br>
+> ├ https://github.com/alibaba/fastjson json解析<br>
+> ├ https://github.com/JakeWharton/DiskLruCache 本地缓存<br>
+> └ chttps://github.com/mcxiaoke/android-volley 网络请求<br>
 
+**3、app 截图 **<br> 
 
+https://raw.githubusercontent.com/music60/music60.github.io/master/resources/image/tucaocc.gif
   
